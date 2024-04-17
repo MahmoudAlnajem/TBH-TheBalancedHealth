@@ -1,0 +1,75 @@
+
+.about-main {
+  background-color: white;
+  padding-block: 50px;
+}
+.about-main .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  height: 100%;
+  gap: 20px;
+}
+@media (max-width: 1199px) {
+  .about-main .container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+.about-main .about-image {
+  display: flex;
+  align-items: center;
+}
+@media(max-width:991px){
+  .about-main .about-image {
+    order:2;
+  }
+}
+.about-main .about-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about-main .about-box-text {
+  position: relative;
+}
+.about-main .about-box-text svg {
+  position: absolute;
+  top: 20px;
+}
+.about-main .about-box-text .about-box {
+  margin-top: 80px;
+}
+.about-main h1 {
+  font-size: 45px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.about-main p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 10px 20px 10px;
+  background-color: #f6f6f6;
+  border-radius: 20px 0 20px 0;
+  color: black;
+  line-height: 2;
+  /* letter-spacing: 1.5px;  */
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.about-main .nav-link {
+  color: #ffff;
+  background-color: #191816;
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  width: fit-content;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

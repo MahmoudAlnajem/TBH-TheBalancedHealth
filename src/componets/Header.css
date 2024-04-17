@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap");
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  padding: 20px;
+  background-color: #1a9aff;
+  position: relative;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.doctor-logo {
+  text-decoration: none;
+}
+
+a.doctor-logo img {
+  width: 250px;
+}
+@media (max-width: 767px) {
+  a.doctor-logo img {
+    width: 200px;
+  }
+}
+header nav {
+  transition: 5s ease;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  position: relative;
+}
+header nav img {
+  width: 450px;
+  display: none;
+  transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  header nav {
+    position: absolute;
+    bottom: -240px;
+    left: 0;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    z-index: 1000;
+    background-color: #1a9aff;
+    display: none;
+    width: 100%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 5px;
+    width: 45%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header nav img {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+  }
+}
+@media (max-width: 767px) {
+  header nav ul {
+    width: 100%;
+  }
+}
+header nav.show {
+  display: flex;
+}
+header nav ul li a svg {
+  margin-right: 5px;
+}
+@media (max-width: 991px) {
+  header nav ul li {
+    width: 100%;
+    position: relative;
+  }
+}
+header nav a.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+}
+@media (max-width: 991px) {
+  header nav a.nav-link {
+    color: white;
+    width: 100%;
+    padding: 15px 20px;
+  }
+}
+header nav a.active,
+header nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 991px) {
+  header nav ul li a.active {
+    background-color: #000;
+    border-radius: 10px;
+  }
+}
+header nav a.apointment-button {
+  color: #ffff;
+  background-color: #191816;
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
+}
+@media (max-width: 991px) {
+  header nav a.apointment-button {
+    background-color: transparent;
+    border-bottom-right-radius: 0;
+  }
+}
+@media (max-width: 991px) {
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+}
+header .container .burger-links {
+  width: 30px;
+  height: 20.5px;
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+}
+@media (min-width: 992px) {
+  header .container .burger-links {
+    display: none;
+  }
+}
+header .container .burger-links span {
+  position: absolute;
+  background-color: white;
+  left: 0;
+  height: 1.5px;
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+header .container span:first-child {
+  top: 0;
+}
+
+header .container span:nth-child(2) {
+  top: 10px;
+  height: 1.5px;
+}
+
+header .container span:last-child {
+  top: 20px;
+}
+.burger-links.clicked span:nth-child(2) {
+  opacity: 0;
+}
+.burger-links.clicked span:first-child,
+.burger-links.clicked span:last-child {
+  top: 9px;
+}
+
+.burger-links.clicked span:first-child {
+  transform: rotate(45deg);
+}
+
+.burger-links.clicked span:last-child {
+  transform: rotate(-45deg);
+}

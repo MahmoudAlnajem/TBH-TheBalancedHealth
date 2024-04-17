@@ -1,0 +1,111 @@
+footer {
+  padding-top: 100px;
+  position: relative;
+  background-color: #191919;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+footer .container .col-1 h1 {
+  color: white;
+  font-size: 50px;
+}
+footer .container .col-1 .social-icons {
+  margin: 20px 0;
+}
+footer .container .col-1 .social-icons span {
+  background-color: #313131;
+  color: #b9b9b9;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+footer .container .col-1 .social-icons a:first-child span:hover {
+  background-color: #1877f2;
+}
+footer .container .col-1 .social-icons a:nth-of-type(2) span:hover {
+  background-color: #c13584;
+}
+footer .container .col-1 .social-icons a:nth-child(3) span:hover {
+  background-color: #34a853;
+}
+footer .container .col-1 .social-icons a:nth-child(4) span:hover {
+  background-color: #fe8009;
+}
+footer .container .col-1 p {
+  line-height: 2;
+  color: #9b9b9b;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+footer .container .col-1 p span{
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+footer .container .col-2 a {
+  display: block;
+  color: #b9b9b9;
+  padding: 15px;
+  position: relative;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+footer .container .col-2 a:hover {
+  color: white;
+}
+footer .container .col-2 a:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+
+footer .container .col-2 a:hover {
+  transform: translateX(10px);
+}
+footer .col-3 .text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+footer .col-3 .text .text-icon {
+  font-size: 25px;
+  color: #2196f3;
+  margin-right: 10px;
+}
+footer .col-3 .text span {
+  line-height: 2;
+  color: #b9b9b9;
+}
+footer .col-4 img {
+  width: 78px;
+  border: 3px solid white;
+}
+footer p.copyrights {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-top: 1px solid #444;
+}
+footer p.copyrights span {
+  color: #2196f3;
+  font-weight: bold;
+}
+footer p.copyrights a {
+  text-decoration: none;
+}

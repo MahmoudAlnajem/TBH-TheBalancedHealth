@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap");
+.landing {
+  position: relative;
+  overflow: hidden;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #1a9aff;
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: left top;
+}
+.landing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  height: 100%;
+  padding-bottom: 100px;
+}
+@media (max-width: 1199px) {
+  .landing .container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+.landing .container .box-text {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .landing .container .box-text {
+    text-align: center;
+  }
+}
+.landing .container .box-text .text {
+  position: relative;
+  height: fit-content;
+}
+.landing .container .box-text .text h1 {
+  padding-bottom: 20px;
+  font-size: 41px;
+  line-height: 70px;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+.landing .container .box-text .text h1 span {
+  font-size: 30px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.landing .container .box-text .text p {
+  line-height: 40px;
+  /*letter-spacing: 2px; */
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.landing .container .box-text .text svg {
+  position: absolute;
+  top: -50px;
+}
+.landing .container .box-text .text .links{
+  display: flex;
+  justify-content: center;
+}
+.landing .container .box-text .text a.apointment-button {
+  display: inline-block;
+  color: #ffff;
+  background-color: #191816;
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.landing .container .box-text .text a.contact-button {
+  color: #191816;
+  background-color: #ffff;
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  text-decoration: none;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.landing .container .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing .container .image img {
+  height: 500px;
+  animation: go-to-down 3s linear infinite;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .landing .container .image img {
+    height: 420px;
+  }
+}
+@keyframes go-to-down {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+}

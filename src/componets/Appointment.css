@@ -1,0 +1,120 @@
+.appointment {
+  background-color: white;
+  padding-bottom: 50px;
+}
+.appointment .apoint-title svg {
+  position: relative;
+  bottom: -35px;
+}
+.appointment .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .appointment .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.appointment .text-col {
+  max-width: 470px;
+  position: relative;
+}
+.apoint-title {
+  margin-bottom: 30px;
+}
+.apoint-title h1 {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+.apoint-title p {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.appointment .image-col {
+  max-width: 470px;
+  display: flex;
+  align-items: center;
+}
+.appointment .image-col img {
+  width: 100%;
+}
+.apoint-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.apoint-form .info-box {
+  display: flex;
+  flex-direction: column;
+}
+.apoint-form .info-box input {
+  height: 35px;
+  width: 200px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(81, 81, 81);
+  margin-top: 10px;
+}
+.apoint-form .info-box textarea {
+  height: 100px;
+  padding: 10px;
+  background-color: transparent;
+  margin-top: 10px;
+}
+.apoint-form form input[type="submit"] {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #1a9aff;
+  color: white;
+  height: fit-content;
+  position: relative;
+  bottom: -60px;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+.apoint-form form input[type="submit"]:hover {
+  background-color: #044271;
+}
+.alert {
+  padding: 20px;
+  background-color: #2eb886; /* Red */
+  color: white;
+  margin-bottom: 15px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  z-index: 100000;
+  width: 400px;
+  right: 0;
+  top:0;
+  vertical-align: middle;
+}
+
+/* The close button */
+.closebtn {
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
