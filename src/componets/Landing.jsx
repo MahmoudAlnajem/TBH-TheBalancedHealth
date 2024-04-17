@@ -21,7 +21,7 @@ export default function Landing() {
             </p>
             <div className="links">
               <NavLink
-                to="/contact"
+                to="/appointment"
                 className={({ isActive }) =>
                   isActive
                     ? "nav-link active apointment-button"
