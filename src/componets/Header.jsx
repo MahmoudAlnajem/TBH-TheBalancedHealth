@@ -82,7 +82,7 @@ export default function Header() {
                 }
               >
                 <FontAwesomeIcon icon={faCalendarCheck} />
-                حجز موعداستشارة
+                حجز موعد استشارة
               </NavLink>
             </li>
           </ul>
