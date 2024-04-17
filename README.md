@@ -1,6 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+We Are The Balanced Health, Your First Step Towards Health.
 
 Currently, two official plugins are available:
 
